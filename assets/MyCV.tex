@@ -1,0 +1,271 @@
+%-------------------------
+% Resume in Latex
+% Author: Matty
+% Based on: https://github.com/jakegut/resume (which was based on https://github.com/sb2nov/resume)
+% License: MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{multicol} % Include the multicol package
+\usepackage{geometry}
+
+\input{glyphtounicode}
+
+% -------------------- FONT --------------------
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-1in} % Default was -.5in
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section Formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{4.08003pt}
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADING--------------------
+\vspace{-7pt}
+
+\begin{center}
+    \textbf{\Huge \scshape Ali Imangholi} \\ \vspace{8pt}
+    \small
+    \faIcon{globe}
+    \href{https://ali-imangholi.github.io}
+    {\underline{https://ali-imangholi.github.io}} $  $
+    \faIcon{envelope}
+    \href{mailto:imangholiali2000@gmail.com}
+    {\underline{imangholiali2000@gmail.com}}
+    \faIcon{github}
+    \href{https://github.com/Ali-Imangholi}{\underline{https://github.com/Ali-Imangholi}} $  $
+\end{center}
+
+% -------------------- SUMMARY -----------------------
+\section{Summary}
+I am Ali Imangholi, a research assistant at the University of Tehran, specializing in efficient and reliable embedded systems and the integration of Machine Learning algorithms into digital system design.
+% -------------------- EDUCATION --------------------
+\section{Education}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {University of Tehran, Tehran, Iran (\href{https://www.topuniversities.com/university-rankings/world-university-rankings/2024?\&countries=ir}{\textit{\underline{ranked 2\textsuperscript{nd} in Iran}}})}{Sep. 2018 - July 2023}
+      {B.Sc. in Electrical Engineering (Digital Systems)}{}
+        \resumeItemListStart
+            \resumeItem{CGPA: 17.11/20 (3.39/4.0)}
+            \resumeItem{GPA (last 71 course credits): 3.66 }
+	\resumeItem{Thesis: Hardware Trojan Detection Using Machine Learning Algorithms}
+	\resumeItem{Advisor: Prof. Siamak Mohammadi (Associate Professor)}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Nemooneh Dolati Shahid Faraj, Tehran, Iran}{Sep. 2014 - June 2016}
+      {Diploma in Mathematics and Physics’ Discipline}{}
+        \resumeItemListStart
+            \resumeItem{CGPA: 18.68/20}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+% -------------------- RESEARCH INTERESTS --------------------
+\section{research interests}
+	\begin{multicols}{2}
+	\begin{itemize}
+		\item Embedded Systems
+		\item Reconfigurable computing and FPGAs
+		\item ASIC design
+		\item Computer architecture
+		\item Hardware Trust
+		\item IoT Devices
+		\item Hardware accelerators
+		\item Machine Learning
+	\end{itemize}
+	\end{multicols}
+% -------------------- HONORS and AWARDS -----------------------
+\section{Honors and Awards}
+\begin{itemize}
+    \item Excellent student at the University of Tehran for six semesters (GPA\textgreater{}17/20)
+    \item FOE award recipient from the University of Tehran (2\textsuperscript{nd} rank by the end of the first two semesters)
+    \item Full Scholarship from the University of Tehran (Tuition Fee)
+    \item Receive excellent grade on Bachelor's final project (20/20 (4/4))
+\end{itemize}
+% -------------------- PUBLICATIONS --------------------
+\section{Publications}
+\begin{itemize}
+    \item \textbf{A. Imangholi}*, M. Hashemi*, A. Momeni, S. Mohammadi and T.E. Carlson. FAST-GO: Fast, Accurate, and Scalable Hardware Trojan Detection using Graph Convolutional Networks. IEEE International Symposium on Hardware Oriented Security and Trust (HOST), 2024 (submitted) \\ (* equal contribution)
+\end{itemize}
+
+% -------------------- ACADEMIC EXPERIENCES --------------------
+\section{Academic Experiences}
+ \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Research Assistant}{}
+      {Dependable Systems Design Lab (DSD Lab), Tehran, Iran}{July 2022 - Present}
+        \resumeItemListStart
+        \resumeItem{Supervisor: Prof. Siamak Mohammadi (Associate Professor)}
+	\resumeItem{employing a machine learning-based technique to detect Hardware Trojan at gate-level netlists}
+        \resumeItem{a research paper has been written on the achieved results}
+        \resumeItemListEnd
+
+     \textbf{Teaching Assistant}
+	\begin{itemize}
+    	\item \emph{Electrical Circuits I, \textbf{Chief TA} \hfill {Jan 2023 - July 2023}}
+  		\begin{itemize}
+    		\item Instructor: Prof. Shaghayegh Vahdat (Assistant Professor)
+  		\end{itemize}
+    	\item \emph{Core-based Embedded System Design, \textbf{Chief TA} \hfill {Jan 2023 - July 2023}}
+  		\begin{itemize}
+    		\item Instructor: Prof. Ahmad Shabani (Ph.D.)
+  		\end{itemize}
+	\item \emph{Digital Systems Laboratory II, \textbf{Lab TA} \hfill {Jan 2023 - July 2023}}
+  		\begin{itemize}
+    		\item Instructor: Prof. Saeed Safari (Associate Professor)
+  		\end{itemize}
+	\item \emph{Electronic System Level Design, \textbf{TA} \hfill {Jan 2022 - July 2022 \& Jan 2023 - July 2023}}
+  		\begin{itemize}
+    		\item Instructor: Prof. Bijan Alizadehmalafeh (Associate Professor)
+  		\end{itemize}
+	\item \emph{FPGA-Based Embedded System Design, \textbf{TA/Lab TA} \hfill {Sep. 2022 - Jan. 2023}}
+  		\begin{itemize}
+    		\item Instructor: Prof. Bijan Alizadehmalafeh (Associate Professor)
+  		\end{itemize}
+	\item \emph{Electrical Measurement, \textbf{Chief TA } \hfill {Jan 2022 - July 2022}}
+  		\begin{itemize}
+    		\item Instructor: Prof. Amir Abbas Shaygani Akmal (Associate Professor)
+  		\end{itemize}
+	\end{itemize}
+
+
+
+  \resumeSubHeadingListEnd
+% -------------------- SELECTED COURSES --------------------
+\section{Selected Courses}
+	\begin{multicols}{2}
+	\begin{itemize}
+		\item Core-based Embedded System Design \\ \textit{Grade: 20/20 (4/4)}
+		\item Digital Electronics Circuit \\ \textit{Grade: 20/20 (4/4)}
+		\item FPGA-Based Embedded System Design \\ \textit{Grade: 18.1/20 (4/4)} 
+		\item Digital Systems II \\ \textit{Grade: 17.5/20 (4/4)}
+		\item Digital Systems Laboratory II \\ \textit{Grade: 19.6/20 (4/4)}
+		\item Foundations of Information Technology \\ \textit{Grade: 20/20 (4/4)} 
+		\item Advanced Programming \\ \textit{Grade: 17.5/20 (4/4)}
+		\item Discrete Mathematics \\ \textit{Grade: 19.55/20 (4/4)}
+		\item Numerical Computation \\ \textit{Grade: 20/20 (4/4)}
+		\item Linear Control Systems \\ \textit{Grade: 20/20 (4/4)}
+
+	\end{itemize}
+	\end{multicols}
+% -------------------- SOFTWARE ----------------
+\section{Software}
+Software Programming Languages: MATLAB, C++, Python\\
+Hardware Programming Languages: Verilog HDL, System Veriolg HDL\\
+Simulators: Modelsim, Quartus, Simulink, PSPICE, HSPICE, LTSPICE\\
+Tools: L-Edit, S-Edit\\
+OS: Unix-based OS, Microsoft Windows\\
+Applications: Microsoft Word, PowerPoint, Excel\\
+
+% -------------------- SELECTED PROJECTS --------------------
+\section{Selected Projects}
+\begin{itemize}
+    \item ARM Processor: Design and Implementation on Cyclone V FPGA\\ \textit{Programing Language: Verilog} \\ \textit{Advisor: Prof. Saeed Safari(Associate Professor)}
+    \item UART and SPI Communication Protocols: Design and Implementation on Cyclone V FPGA \\ \textit{Programing Language: Verilog} \\ \textit{Advisors: Prof. Bijan Alizadeh(Associate Professor) \& Prof. Ahmad Shabani(Ph.D.)}
+    \item FIR Filter: Design and Implementation on Cyclone V FPGA \\ \textit{Programing Language: Verilog} \\ \textit{Advisor: Prof. Bijan Alizadeh(Associate Professor)}
+    \item Gate-Level Simulator: Design \\ \textit{Programing Language: C++}  \\ \textit{Advisor: Prof. Zainalabedin Navabi(Professor)}
+    \item More projects are available on  \href{https://ali-imangholi.github.io}{\textit{\underline{my personal website}}}. 
+\end{itemize}
+
+% -------------------- MEMBERSHIPS ----------------
+\section{Memberships}
+\begin{itemize}
+\item volunteer member of the International Red Cross and Red Crescent Movement
+\end{itemize}
+
+% -------------------- LANGUAGE ----------------
+\section{Language}
+\begin{itemize}
+\item Persian: Native
+\item English: Proficient (IELTS exam will have been taken by Nov. 15, 2023)
+\end{itemize}
+
+% -------------------- REFERENCES ----------------
+\section{References}
+\begin{itemize}
+\item Will be available upon request
+\end{itemize}
+%--------------------------------------------------------------------------
+\end{document}
